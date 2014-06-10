@@ -1,0 +1,53 @@
+-----> Starting Kitchen (v1.2.1)
+[36m-----> Converging <default-centos-64>...
+[0m[36m       Preparing files for transfer
+[0m[36m       Preparing current project directory as a cookbook
+[0m[36m       Removing non-cookbook files before transfer
+[0m[36m       Transfering files to <default-centos-64>
+[0m[36m       [2014-06-09T13:58:24+00:00] INFO: Forking chef instance to converge...
+[0m[36m       [2014-06-09T13:58:24+00:00] WARN: 
+[0m[36m       * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+[0m[36m       SSL validation of HTTPS requests is disabled. HTTPS connections are still
+[0m[36m       encrypted, but chef is not able to detect forged replies or man in the middle
+[0m[36m       attacks.
+[0m[36m       
+[0m[36m       To fix this issue add an entry like this to your configuration file:
+[0m[36m       
+[0m[36m       ```
+[0m[36m         # Verify all HTTPS connections (recommended)
+[0m[36m         ssl_verify_mode :verify_peer
+[0m[36m       
+[0m[36m         # OR, Verify only connections to chef-server
+[0m[36m         verify_api_cert true
+[0m[36m       ```
+[0m[36m       
+[0m[36m       To check your SSL configuration, or troubleshoot errors, you can use the
+[0m[36m       `knife ssl check` command like so:
+[0m[36m       
+[0m[36m       ```
+[0m[36m         knife ssl check -c /tmp/kitchen/solo.rb
+[0m[36m       ```
+[0m[36m       
+[0m[36m       * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+[0m[36m       
+[0m[36m       Starting Chef Client, version 11.12.8[0m
+[0m[36m       [2014-06-09T13:58:24+00:00] INFO: *** Chef 11.12.8 ***
+[0m[36m       [2014-06-09T13:58:24+00:00] INFO: Chef-client pid: 7919
+[0m[36m       [2014-06-09T13:58:30+00:00] INFO: Setting the run_list to ["recipe[android::default]"] from CLI options
+[0m[36m       [2014-06-09T13:58:30+00:00] INFO: Run List is [recipe[android::default]]
+[0m[36m       [2014-06-09T13:58:30+00:00] INFO: Run List expands to [android::default]
+[0m[36m       [2014-06-09T13:58:30+00:00] INFO: Starting Chef Run for default-centos-64
+[0m[36m       [2014-06-09T13:58:30+00:00] INFO: Running start handlers
+[0m[36m       [2014-06-09T13:58:30+00:00] INFO: Start handlers complete.
+[0m[36m       Compiling Cookbooks...[0m
+[0m[36m       
+[0m[36m       Running handlers:[0m
+[0m[36m       [2014-06-09T13:58:30+00:00] ERROR: Running exception handlers
+[0m[36m       Running handlers complete
+[0m[36m       [0m
+[0m[36m       [2014-06-09T13:58:30+00:00] ERROR: Exception handlers complete
+[0m[36m       [2014-06-09T13:58:30+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+[0m[36m       Chef Client failed. 0 resources updated in 6.859178821 seconds[0m
+[0m[36m       [2014-06-09T13:58:30+00:00] ERROR: Cookbook ark not found. If you're loading ark from another cookbook, make sure you configure the dependency in your metadata
+[0m[36m       [2014-06-09T13:58:30+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[0m
